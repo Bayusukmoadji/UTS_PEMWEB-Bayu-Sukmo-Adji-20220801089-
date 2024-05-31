@@ -1,0 +1,119 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===============Navbar================= */
+.hero {
+    background-color: white;
+}
+
+.navbar {
+    background-color: rgba(255, 128, 0, 0.81);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 5rem;
+}
+
+nav ul li a:hover {
+    background-color: rgba(243, 231, 231, 0.442);
+    border-radius: 5px;
+}
+
+nav div img {
+    width: 200px;
+    margin-left: 50px;
+}
+
+.hero .navbar .ul a:hover{
+color: rgb(17, 0, 255);
+}
+/* ================Navbar End=================== */
+
+
+/* ===============carousel ================== */
+.hero .slides {
+  width: 100%;
+  position: relative;
+}
+
+.hero .slides .slide {
+  display: none;
+}
+
+.hero .slides .slide img {
+  width: 100%;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.hero .slides .navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.hero .slides .navigation a {
+  cursor: pointer;
+  padding: 16px;
+  font-weight: normal;
+  font-size: 55px;
+  color: white;
+  background: rgba(0,0,0,0.2);
+  user-select: none;
+  transition: 0.6 ease;
+  text-decoration: none;
+}
+
+.hero .slides .navigation a:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+@keyframes fade {
+  from {opacity:0.3}
+  to {opacity: 1}
+
+}
+  /* =============carousel end================== */
+
+  /* ==============berita ================== */
+  .berita {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  /* ================== berita end ============== */
+
+  /* ================about================ */
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+  /* ============ about end ================== */
